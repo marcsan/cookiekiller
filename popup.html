@@ -1,0 +1,45 @@
+<html>
+<head>
+	<style type="text/css">
+		div.menu{
+			display: flex;
+			flex-direction: column;
+			min-width:120px;
+		}
+		div.menu div.item{
+			display: flex;
+			flex: 32px 0 0;
+			align-items:center;
+			cursor: pointer;
+		}
+		div.menu div.item:HOVER{
+			background-color: #f6f6f6; 
+		}
+		div.menu div.item span{
+			flex: 1;
+			font-size:1.5rem;
+			padding:0 .2em;
+		}
+		i{
+			flex: 24px 0 0;
+			display: inline-block;
+			width:24px;
+			height:24px;
+			background-size: contain; 
+		}
+		i.kill{
+			background-image: url('img/kill.svg');
+		}
+		
+	</style>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/popup.js">
+		
+	</script>
+</head>
+<body>
+	<div class="menu" id="ctxmenu">
+		<div class="item" id="btnkill"><i class="kill"></i><span>Kill!</span></div>
+	</div>
+</body>
+</html>

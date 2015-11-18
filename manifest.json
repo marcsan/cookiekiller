@@ -4,19 +4,22 @@
   "name": "Cookies pop-up killer",
   "description": "This extension kills the annoying cookie alert.",
   "version": "1.0",
-  "icons": { "16": "icon16.png",
-           "48": "icon48.png"
+  "icons": { 
+  				"16": "img/icon16.png",
+           		"48": "img/icon48.png"
            },
   "browser_action": {
-    "default_icon": "icon48.png"
+    "default_icon": "img/icon48.png",
+    "default_popup":"popup.html",
+    "default_title":"Kill a Cookie!"
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["jquery-2.1.4.min.js", "popup.js"]
+      "js": ["js/jquery-2.1.4.min.js", "js/content.js"]
     }
   ],
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["js/background.js"]
   }
 }
