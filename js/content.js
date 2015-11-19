@@ -1,5 +1,5 @@
 $(function(){
-	var selectors = ['#kw-cookie-policy', '#cookie-bar'];
+	var selectors = ['#kw-cookie-policy', '#cookie-bar', '.cc_banner-wrapper'];
 	var KEY_SELECTOR = "CookiePopUpKiller.personal_selectors";
 	var personal_selectors = localStorage[KEY_SELECTOR];
 	//TODO add shared selectors from remote sources (P2P)
